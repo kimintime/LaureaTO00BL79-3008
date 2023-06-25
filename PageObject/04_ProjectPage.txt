@@ -7,11 +7,9 @@
 
 Documentation	
 
-# TODO: Write Precondition, Postcondition, Tags
-
-Pre Condition	 
-Post Condition	
-Tags
+Pre Condition	Open browser to GitlabUrl, login with valid credentials 
+Post Condition	Close browser
+Tags	Project, TS-3-Project
 
 #******************* Common Variables ********************
 
