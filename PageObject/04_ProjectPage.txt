@@ -21,21 +21,17 @@ ProjectsUrl = https://gitlab.com/dashboard/projects
 NewProjectsUrl = https://gitlab.com/projects/new
 BlankUrl = https://gitlab.com/projects/new#blank_project	
 TemplateUrl = https://gitlab.com/projects/new#create_from_template
+ProjectOverviewUrl = https://gitlab.com/<username>/<TemplateProjectName>/edit
 ProjectName = Test-01
 TemplateProjectName = Test-02
+NewProjectName = New_test
 GroupName = <username>
+InputText = <username>/TemplateProjectName
+NewSlug = Test01
 
 #******************** Test Cases *************************
 
 *** Test Case ***
-
-# TODO: Write Positive and Negative Test Cases and Test Process steps
-
-# Positive Test examples are below write test process steps for each below test cases
- 
-	Update name of template project
-	Delete template project
-	Valide that message is showing Project 'First project ' was successfully created.
 
 # Postive Test  
 
@@ -71,13 +67,50 @@ Create template project
 	Submit new project with Create project button  
 	Verify project should be successfully imported   
 
+Update name of template project  
+	Navigate to Gitlab Dashboard Page				ProjectsUrl		
+	Select template project				TemplateProjectName  
+	Verify page should be project overview page				ProjectOverviewUrl  
+	Select General from Settings dropdown menu from left sidebar  
+	Verify page should should be General Settings				ProjectOverviewUrl  
+	Input new name into Project name field				NewProjectName
+	Select to save changes with Save changes button  
+	Verify name was successfully updated  
+
+Delete template project  
+	Navigate to Gitlab Dashboard Page				ProjectsUrl		
+	Select template project				TemplateProjectName  
+	Verify page should be project overview page				ProjectOverviewUrl  
+	Select General from Settings dropdown menu from left sidebar  
+	Verify page should should be General Settings				ProjectOverviewUrl  
+	Select Expand from Advanced options near the bottom of the page  
+	Select Delete project by clicking the button in the Delete this project section  
+	Input text to continue				InputText  
+	Select Yes, delete project button  
+	Verify page should be main dashboard				ProjectsUrl
+	Verfiy Project should be in the process of being deleted  
 
 
-	
+# Negative Test  
 
+Create a blank project with the previous same parameters 
+	Navigate to Gitlab Dashboard Page		ProjectsUrl		
+	Select New project button  
+	Verify new projects page should open		NewProjectsUrl  
+	Select Create blank project  
+	Verify new page should open			BlankUrl
+	Input name into Project name field		ProjectName  
+	Select user from Project URL dropdown		GroupName	
+	Verify Project slug is ProjectName		ProjectName  
+	Verify Deployment Target should be blank  
+	Verify Visibility Level should be private  
+	Verify Intialize repository with a README should be checked
+	Verify Enable Static Application Security Testing is unchecked
+	Submit new project with Create project button  
+	Verify project creation should contain the following errors:  
+		Project namespace name has already been taken  
+		Name has already been taken  
+		Path has already been taken  
 
-# Negative Test examples are below write test process steps for each below test case
-
-	Create a blank project with the previous same name
 
 
