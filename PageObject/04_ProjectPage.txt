@@ -83,7 +83,7 @@ Delete template project
 	Select General from Settings dropdown menu from left sidebar  
 	Verify page should should be General Settings				ProjectOverviewUrl  
 	Select Expand from Advanced options near the bottom of the page  
-	Select Delete project by clicking the button in the Delete this project section  
+	Select Delete project by clicking the button  
 	Input text to continue							InputText  
 	Select Yes, delete project button  
 	Verify page should be main dashboard					ProjectsUrl
