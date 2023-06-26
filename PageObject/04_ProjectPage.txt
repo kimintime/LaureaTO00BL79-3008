@@ -40,10 +40,10 @@ GroupName = <username>
 Create blank project
 	Navigate to Gitlab Dashboard Page		ProjectsUrl		
 	Select New project button  
-	Verify new projects page should open	NewProjectsUrl  
+	Verify new projects page should open		NewProjectsUrl  
 	Select Create blank project   
 	Input name into Project name field		ProjectName  
-	Select user from Project URL dropdown	GroupName	
+	Select user from Project URL dropdown		GroupName	
 	Verify Project slug is ProjectName		ProjectName
 	Leave Deployment Target blank
 	Leave Visibility Level private
