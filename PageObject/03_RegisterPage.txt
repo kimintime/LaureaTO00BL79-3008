@@ -15,7 +15,7 @@ Tags	Registration, TS-2-Registration
 
 RegistrationUrl = https://gitlab.com/users/sign_up  
 
-//In real life, a valid names go here, redacted for security purposes  
+//In real life, valid names go here, redacted for security purposes  
 
 FirstName = <FirstName>  
 LastName = <LastName>  
@@ -40,7 +40,7 @@ Register user with valid credentials
 	Input Username					UserName  
 	Input Email					Email  
 	Input Password					Password  
-	Submit Registration Form by clicking Register button  
+	Submit Registration Form with `Register` button  
 	Verify Page should ask for code sent to Email address  
 	Submit code sent to Email address  
 	Verify Page should contain Success dialogue and redirect to Welcome page  
@@ -48,7 +48,7 @@ Register user with valid credentials
 
 Register user with Github valid credentials  
 	Navigate to Registration Page	RegistrationUrl  
-	Submit Registration Form by clicking Github button  
+	Submit Registration Form with `Github` button  
 	Verify Page should ask for code sent to Github email address  				
 	Submit code sent to Github email address														
 	Verify Page should contain Succes dialogue and redirect to Welcome page  
@@ -64,7 +64,7 @@ Register user with existing credentials
 	Input Email					Email  
 	Input Password					Password  
 	Verify Username field should indicate username is taken  
-	Submit Registration Form by clicking Register button  
+	Submit Registration Form with `Register` button  
 	Verify errors prevent this user from being saved  
 
 Register user with empty password  
@@ -75,7 +75,7 @@ Register user with empty password
 	Input Email					SecondEmail  
 	Input Password					empty  
 	Verify Password field should indicate that it should contain a minimum of 8 characters  
-	Submit Registration Form by clicking Register button  
+	Submit Registration Form with `Register` button  
 	Verify nothing happens and page remains in its current state  
 
 Register user with invalid email  
@@ -86,6 +86,5 @@ Register user with invalid email
 	Input Email					Invalid_Email  
 	Input Password					Password  
 	Verify Email field should indicate that it needs a valid email address  
-	Submit Registration Form by clicking Register button  
+	Submit Registration Form with `Register` button  
 	Verify nothing happens and page remains in its current state  
-

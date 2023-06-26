@@ -1,25 +1,26 @@
 
-#******************** Settings ************************
+#******************** Settings ************************  
 
-*** Settings ***
+*** Settings ***  
 
-# TODO: Write Dcocumentation e.g. Project Test scenario. CRUD Operation: Create, Read, Update, Delete
+# TODO: Write Dcocumentation e.g. Project Test scenario. CRUD Operation: Create, Read, Update, Delete  
 
-Documentation	
+Documentation	Testing CRUD operations of Projects page functionality of creating and manipulating projects.  
 
-Pre Condition	Open browser to GitlabUrl, login with valid credentials 
-Post Condition	Close browser
-Tags	Project, TS-3-Project
+Pre Condition	Open browser to ProjectsUrl using login with valid credentials 
+Post Condition	Close browser  
+Tags	Project, TS-3-Project  
 
-#******************* Common Variables ********************
+#******************* Common Variables ********************  
 
-*** Variables ***
+*** Variables ***  
 
-# NOTE: Please Remove your login credential before uploading Assignments
+//In real life, valid names go here, redacted for security purposes  
 
-# TODO: Write Project creation field variables
-
-
+ProjectsUrl = https://gitlab.com/dashboard/projects
+NewProjectsUrl = https://gitlab.com/projects/new
+ProjectName = Test-01
+GroupName = <username>
 
 #******************** Test Cases *************************
 
@@ -29,11 +30,32 @@ Tags	Project, TS-3-Project
 
 # Positive Test examples are below write test process steps for each below test cases
 
-	Create blank project
 	Create template project 
 	Update name of template project
 	Delete template project
 	Valide that message is showing Project 'First project ' was successfully created.
+
+# Postive Test  
+
+Create blank project
+	Navigate to Gitlab Dashboard Page		ProjectsUrl		
+	Select `New project` button  
+	Verify new projects page should open	NewProjectsUrl  
+	Select `Create blank project`   
+	Input name into `Project name` field	ProjectName  
+	Select user from `Project URL` dropdown	GroupName	
+	Verify `Project slug` is ProjectName	ProjectName
+	Leave `Deployment Target` blank
+	Leave `Visibility Level` private
+	Verify `Intialize repository with a README` should be checked
+	Verify `Enable Static Application Security Testing` is unchecked
+	Submit new project with `Create project` button
+	Verify project should be successfully created
+
+Create template project
+
+	
+
 
 # Negative Test examples are below write test process steps for each below test case
 
