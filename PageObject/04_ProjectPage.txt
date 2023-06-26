@@ -27,7 +27,6 @@ TemplateProjectName = Test-02
 NewProjectName = New_test
 GroupName = <username>
 InputText = <username>/TemplateProjectName
-NewSlug = Test01
 
 #******************** Test Cases *************************
 
@@ -52,42 +51,42 @@ Create blank project
 	Verify project should be successfully created  
 
 Create template project
-	Navigate to Gitlab Dashboard Page				ProjectsUrl		
+	Navigate to Gitlab Dashboard Page			ProjectsUrl		
 	Select New project button  
-	Verify new projects page should open				NewProjectsUrl  
+	Verify new projects page should open			NewProjectsUrl  
 	Select Create from template  
-	Verify new page should open					TemplateUrl  
+	Verify new page should open				TemplateUrl  
 	Select Sample Gitlab Project with Use template button  
-	Verify new input should open					TemplateUrl  
-	Input name into Project name field				TemplateProjectName  
-	Select user from Project URL dropdown				GroupName	
-	Verify Project slug is TemplateProjectName			TemplateProjectName  
+	Verify new input should open				TemplateUrl  
+	Input name into Project name field			TemplateProjectName  
+	Select user from Project URL dropdown			GroupName	
+	Verify Project slug is TemplateProjectName		TemplateProjectName  
 	Verify optional Project description field should be blank  
 	Verify Visibility Level should be private  
 	Submit new project with Create project button  
 	Verify project should be successfully imported   
 
 Update name of template project  
-	Navigate to Gitlab Dashboard Page				ProjectsUrl		
-	Select template project				TemplateProjectName  
-	Verify page should be project overview page				ProjectOverviewUrl  
+	Navigate to Gitlab Dashboard Page			ProjectsUrl		
+	Select template project			TemplateProjectName  
+	Verify page should be project overview page			ProjectOverviewUrl  
 	Select General from Settings dropdown menu from left sidebar  
-	Verify page should should be General Settings				ProjectOverviewUrl  
-	Input new name into Project name field				NewProjectName
+	Verify page should should be General Settings			ProjectOverviewUrl  
+	Input new name into Project name field			NewProjectName
 	Select to save changes with Save changes button  
 	Verify name was successfully updated  
 
 Delete template project  
-	Navigate to Gitlab Dashboard Page				ProjectsUrl		
-	Select template project				TemplateProjectName  
-	Verify page should be project overview page				ProjectOverviewUrl  
+	Navigate to Gitlab Dashboard Page			ProjectsUrl		
+	Select template project			TemplateProjectName  
+	Verify page should be project overview page			ProjectOverviewUrl  
 	Select General from Settings dropdown menu from left sidebar  
-	Verify page should should be General Settings				ProjectOverviewUrl  
+	Verify page should should be General Settings			ProjectOverviewUrl  
 	Select Expand from Advanced options near the bottom of the page  
 	Select Delete project by clicking the button in the Delete this project section  
-	Input text to continue				InputText  
+	Input text to continue			InputText  
 	Select Yes, delete project button  
-	Verify page should be main dashboard				ProjectsUrl
+	Verify page should be main dashboard			ProjectsUrl
 	Verfiy Project should be in the process of being deleted  
 
 
