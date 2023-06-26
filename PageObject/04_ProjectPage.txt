@@ -44,7 +44,7 @@ Create blank project
 	Select New project button  
 	Verify new projects page should open		NewProjectsUrl  
 	Select Create blank project  
-	Verify new page should open		BlankUrl
+	Verify new page should open			BlankUrl
 	Input name into Project name field		ProjectName  
 	Select user from Project URL dropdown		GroupName	
 	Verify Project slug is ProjectName		ProjectName  
@@ -60,12 +60,12 @@ Create template project
 	Select New project button  
 	Verify new projects page should open		NewProjectsUrl  
 	Select Create from template  
-	Verify new page should open		TemplateUrl  
+	Verify new page should open			TemplateUrl  
 	Select Sample Gitlab Project with Use template button  
-	Verify new input should open		TemplateUrl  
+	Verify new input should open			TemplateUrl  
 	Input name into Project name field		TemplateProjectName  
 	Select user from Project URL dropdown		GroupName	
-	Verify Project slug is TemplateProjectName		TemplateProjectName  
+	Verify Project slug is TemplateProjectName	TemplateProjectName  
 	Verify optional Project description field should be blank  
 	Verify Visibility Level should be private  
 	Submit new project with Create project button  
