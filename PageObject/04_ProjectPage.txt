@@ -67,26 +67,26 @@ Create template project
 	Verify project should be successfully imported   
 
 Update name of template project  
-	Navigate to Gitlab Dashboard Page			ProjectsUrl		
-	Select template project				TemplateProjectName  
+	Navigate to Gitlab Dashboard Page				ProjectsUrl		
+	Select template project						TemplateProjectName  
 	Verify page should be project overview page			ProjectOverviewUrl  
 	Select General from Settings dropdown menu from left sidebar  
 	Verify page should should be General Settings			ProjectOverviewUrl  
-	Input new name into Project name field			NewProjectName
+	Input new name into Project name field				NewProjectName
 	Select to save changes with Save changes button  
 	Verify name was successfully updated  
 
 Delete template project  
-	Navigate to Gitlab Dashboard Page			ProjectsUrl		
-	Select template project					TemplateProjectName  
+	Navigate to Gitlab Dashboard Page				ProjectsUrl		
+	Select template project							TemplateProjectName  
 	Verify page should be project overview page			ProjectOverviewUrl  
 	Select General from Settings dropdown menu from left sidebar  
 	Verify page should should be General Settings			ProjectOverviewUrl  
 	Select Expand from Advanced options near the bottom of the page  
 	Select Delete project by clicking the button in the Delete this project section  
-	Input text to continue				InputText  
+	Input text to continue						InputText  
 	Select Yes, delete project button  
-	Verify page should be main dashboard			ProjectsUrl
+	Verify page should be main dashboard				ProjectsUrl
 	Verfiy Project should be in the process of being deleted  
 
 
