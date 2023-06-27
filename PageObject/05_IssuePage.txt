@@ -85,7 +85,7 @@ Delete issue
 # Negative Test  
 
 Create issue with empty Title field  
-	Navigate to Issues Page		IssuessUrl	
+	Navigate to Issues Page			IssuessUrl	
 	Select New issue button  
 	Verify page should be NewIssueUrl	NewIssueUrl  
 	Leave Title field blank  
@@ -95,7 +95,7 @@ Create issue with empty Title field
 
 Update issue with empty Title field  
 	Update issue  
-	Navigate to Issue page		NewTestIssueUrl  
+	Navigate to Issue page			NewTestIssueUrl  
 	Select Edit button  
 	Verify NewTestIssueUrl should allow input	NewTestIssueUrl  
 	Leave Title field empty  
