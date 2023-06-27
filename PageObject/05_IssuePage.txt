@@ -58,7 +58,7 @@ Update issue
 	Verify description should be NewIssueDescription			NewIssueDescription 
 
 Create second issue with updated issue name  
-	Navigate to Issues Page						IssuessUrl	
+	Navigate to Issues Page							IssuessUrl	
 	Select New issue button  
 	Verify page should be NewIssueUrl					NewIssueUrl  
 	Input IssueName into Title field					NewIssueName  
@@ -67,7 +67,7 @@ Create second issue with updated issue name
 	Verify This issue is confidential checkbox should be unchecked  
 	Verify Assignee, Milestone, Labels, and Due date fields should be blank 
 	Select Create issue button  
-	Verify Page should be NewTestIssueUrl				NewTestIssueUrl  
+	Verify Page should be NewTestIssueUrl					NewTestIssueUrl  
 
 Close issue  
 	Navigate to Issue page		TestIssueUrl  
