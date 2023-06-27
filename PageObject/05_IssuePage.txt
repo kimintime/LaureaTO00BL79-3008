@@ -95,7 +95,7 @@ Create issue with empty Title field
 
 Update issue with empty Title field  
 	Update issue  
-	Navigate to Issue page			NewTestIssueUrl  
+	Navigate to Issue page				NewTestIssueUrl  
 	Select Edit button  
 	Verify NewTestIssueUrl should allow input	NewTestIssueUrl  
 	Leave Title field empty  
