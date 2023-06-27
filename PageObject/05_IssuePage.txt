@@ -33,16 +33,16 @@ NewIssueDescription = This is the new test description
 # Positive Test  
 
 Create new issue
-	Navigate to Issues Page		IssuessUrl	
+	Navigate to Issues Page					IssuessUrl	
 	Select New issue button  
-	Verify page should be NewIssueUrl		NewIssueUrl  
-	Input IssueName into Title field	IssueName  
+	Verify page should be NewIssueUrl				NewIssueUrl  
+	Input IssueName into Title field				IssueName  
 	Verify Type should be Issue  
 	Input IssueDescription into Description text box		IssueDescription  
 	Verify This issue is confidential checkbox should be unchecked  
 	Verify Assignee, Milestone, Labels, and Due date fields should be blank 
 	Select Create issue button  
-	Verify Page should be TestIssueUrl		TestIssueUrl  
+	Verify Page should be TestIssueUrl					TestIssueUrl  
 
 Update issue  
 	Navigate to Issue page		TestIssueUrl  
