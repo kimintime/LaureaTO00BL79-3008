@@ -19,26 +19,16 @@ Tags	Issue, TS-4-Issue
 IssuesUrl = https://gitlab.com/<username>/<ProjectName>/-/issues  
 NewIssueUrl = https://gitlab.com/<username>/<ProjectName>/-/issues/new  
 TestIssueUrl = https://gitlab.com/<username>/<ProjectName>/-/issues/1
+NewTestIssueUrl = https://gitlab.com/<username>/<ProjectName>/-/issues/2
 ProjectName = Test-01  
 IssueName = New_issue  
 IssueDescription = This is a test description 
 NewIssueName = New_issue-01  
 NewIssueDescription = This is the new test description   
 
-
-
 #******************** Test Cases *************************
 
 *** Test Case ***
-
-# TODO: Write Positive Test Cases and Test Process steps
-
-# Positive Test examples are below write test process steps for each below test case
-
-	Create issue,
- 	Update name of issue, 
-	Create second issue with privious updated name
-    Delete first issue
 
 # Positive Test  
 
@@ -67,12 +57,23 @@ Update issue
 	Verify title should be NewIssueName		NewIssueName  
 	Verify description should be NewIssueDescription		NewIssueDescription 
 
+Create second issue with updated issue name  
+	Navigate to Issues Page		IssuessUrl	
+	Select New issue button  
+	Verify page should be NewIssueUrl		NewIssueUrl  
+	Input IssueName into Title field	NewIssueName  
+	Verify Type should be Issue  
+	Input IssueDescription into Description text box		NewIssueDescription  
+	Verify This issue is confidential checkbox should be unchecked  
+	Verify Assignee, Milestone, Labels, and Due date fields should be blank 
+	Select Create issue button  
+	Verify Page should be NewTestIssueUrl		NewTestIssueUrl  
+
 Close issue  
 	Navigate to Issue page		TestIssueUrl  
 	Select Close button  
 	Verify Close button should be Reopen issue  
 	Verify issue should be tagged as closed  
-
 
 Delete issue  
 	Navigate to Issue page		TestIssueUrl 
@@ -82,6 +83,26 @@ Delete issue
 	Verify the issue should be successfully deleted  
 
 # Negative Test  
+
+Create issue with empty Title field  
+	Navigate to Issues Page		IssuessUrl	
+	Select New issue button  
+	Verify page should be NewIssueUrl		NewIssueUrl  
+	Leave Title field blank  
+	Leave Description field blank  
+	Select Create issue button  
+	Verify Title field should be required  
+
+Update issue with empty Title field  
+	Update issue  
+	Navigate to Issue page		NewTestIssueUrl  
+	Select Edit button  
+	Verify NewTestIssueUrl should allow input		NewTestIssueUrl  
+	Leave Title field empty  
+	Leave Descriptioon field empty   
+	Verify Save changes button should be unselectable  
+
+	
 
 
 
