@@ -87,7 +87,7 @@ Delete issue
 Create issue with empty Title field  
 	Navigate to Issues Page		IssuessUrl	
 	Select New issue button  
-	Verify page should be NewIssueUrl		NewIssueUrl  
+	Verify page should be NewIssueUrl	NewIssueUrl  
 	Leave Title field blank  
 	Leave Description field blank  
 	Select Create issue button  
@@ -97,7 +97,7 @@ Update issue with empty Title field
 	Update issue  
 	Navigate to Issue page		NewTestIssueUrl  
 	Select Edit button  
-	Verify NewTestIssueUrl should allow input		NewTestIssueUrl  
+	Verify NewTestIssueUrl should allow input	NewTestIssueUrl  
 	Leave Title field empty  
 	Leave Descriptioon field empty   
 	Verify Save changes button should be unselectable  
