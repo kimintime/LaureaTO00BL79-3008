@@ -48,7 +48,7 @@ Update issue
 	Navigate to Issue page							TestIssueUrl  
 	Select Edit button  
 	Verify TestIssueUrl should allow input					TestIssueUrl  
-	Input NewIssueName into Title field						NewIssueName  
+	Input NewIssueName into Title field					NewIssueName  
 	Verify Type should be Issue  
 	Input NewIssueDescriptionIssueDescription into Description text box	NewIssueDescription  
 	Verify This issue is confidential checkbox should be unchecked  
