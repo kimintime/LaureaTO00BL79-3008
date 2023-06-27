@@ -114,7 +114,7 @@ Create a blank project with the previous same parameters
 
 Update name of project with empty name field
 	Navigate to Gitlab Dashboard Page				ProjectsUrl		
-	Select project						ProjectName  
+	Select project								ProjectName  
 	Verify page should be project overview page			ProjectOverviewUrl  
 	Select General from Settings dropdown menu from left sidebar  
 	Verify page should should be General Settings			ProjectOverviewUrl  
@@ -124,7 +124,7 @@ Update name of project with empty name field
 
 Delete project without confirmation text  
 	Navigate to Gitlab Dashboard Page					ProjectsUrl		
-	Select project							ProjectName  
+	Select project									ProjectName  
 	Verify page should be project overview page				ProjectOverviewUrl  
 	Select General from Settings dropdown menu from left sidebar  
 	Verify page should should be General Settings				ProjectOverviewUrl  
