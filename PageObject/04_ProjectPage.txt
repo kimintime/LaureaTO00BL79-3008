@@ -27,6 +27,7 @@ TemplateProjectName = Test-02
 NewProjectName = New_test
 GroupName = <username>
 InputText = <username>/TemplateProjectName
+InputText_Error = <username>/test
 
 #******************** Test Cases *************************
 
@@ -111,5 +112,23 @@ Create a blank project with the previous same parameters
 		Name has already been taken  
 		Path has already been taken  
 
+Update name of project with empty name field
+	Navigate to Gitlab Dashboard Page				ProjectsUrl		
+	Select project						ProjectName  
+	Verify page should be project overview page			ProjectOverviewUrl  
+	Select General from Settings dropdown menu from left sidebar  
+	Verify page should should be General Settings			ProjectOverviewUrl  
+	Leave Project name field blank
+	Select to save changes with Save changes button  
+	Verify error should be Project namespace name can't be blank   
 
-
+Delete project without confirmation text  
+	Navigate to Gitlab Dashboard Page					ProjectsUrl		
+	Select project							ProjectName  
+	Verify page should be project overview page				ProjectOverviewUrl  
+	Select General from Settings dropdown menu from left sidebar  
+	Verify page should should be General Settings				ProjectOverviewUrl  
+	Select Expand from Advanced options near the bottom of the page  
+	Select Delete project by clicking the button  
+	Input text to continue							InputText_Error    
+	Verify that Yes, delete project button should not be selectable  
