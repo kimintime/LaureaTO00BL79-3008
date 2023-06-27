@@ -1,9 +1,7 @@
 
 #******************** Settings ************************  
 
-*** Settings ***  
-
-# TODO: Write Dcocumentation e.g. Project Test scenario. CRUD Operation: Create, Read, Update, Delete  
+*** Settings ***   
 
 Documentation	Testing CRUD operations of Projects page functionality of creating and manipulating projects.  
 

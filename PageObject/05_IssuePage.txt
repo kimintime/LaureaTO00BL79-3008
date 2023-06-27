@@ -4,20 +4,26 @@
 *** Settings ***
 Documentation	Issue Test scenario. CRUD Operation: Create, Read, Update, Delete
 
-# TODO: Write Precondition and Postcondition, Tags 
-
-Pre Condition	Tips: Project must be created by the user before 
-Post Condition	
-Tags
+Pre Condition	User must have valid account, Project must be created by the user
+Post Condition	Close browser
+Tags	Issue, TS-4-Issue  
 
 #******************* Common Variables ********************
 
-
 *** Variables ***
 
-# NOTE: Please Remove your login credential before uploading Assignments
-
 # TODO: Write Issue creation field variables, Updated name of the issue
+
+//In real life, valid names go here, redacted for security purposes  
+
+IssuesUrl = https://gitlab.com/<username>/<ProjectName>/-/issues  
+NewIssueUrl = https://gitlab.com/<username>/<ProjectName>/-/issues/new  
+TestIssueUrl = https://gitlab.com/<username>/<ProjectName>/-/issues/1
+ProjectName = Test-01  
+IssueName = New_issue  
+IssueDescription = This is a test description 
+NewIssueName = New_issue-01  
+NewIssueDescription = This is the new test description   
 
 
 
@@ -33,3 +39,56 @@ Tags
  	Update name of issue, 
 	Create second issue with privious updated name
     Delete first issue
+
+# Positive Test  
+
+Create new issue
+	Navigate to Issues Page		IssuessUrl	
+	Select New issue button  
+	Verify page should be NewIssueUrl		NewIssueUrl  
+	Input IssueName into Title field	IssueName  
+	Verify Type should be Issue  
+	Input IssueDescription into Description text box		IssueDescription  
+	Verify This issue is confidential checkbox should be unchecked  
+	Verify Assignee, Milestone, Labels, and Due date fields should be blank 
+	Select Create issue button  
+	Verify Page should be TestIssueUrl		TestIssueUrl  
+
+Update issue  
+	Navigate to Issue page		TestIssueUrl  
+	Select Edit button  
+	Verify TestIssueUrl should allow input		TestIssueUrl  
+	Input NewIssueName into Title field		NewIssueName  
+	Verify Type should be Issue  
+	Input NewIssueDescriptionIssueDescription into Description text box		NewIssueDescription  
+	Verify This issue is confidential checkbox should be unchecked  
+	Verify Assignee, Milestone, Labels, and Due date fields should be blank 
+	Select Save changes button  
+	Verify title should be NewIssueName		NewIssueName  
+	Verify description should be NewIssueDescription		NewIssueDescription 
+
+Close issue  
+	Navigate to Issue page		TestIssueUrl  
+	Select Close button  
+	Verify Close button should be Reopen issue  
+	Verify issue should be tagged as closed  
+
+
+Delete issue  
+	Navigate to Issue page		TestIssueUrl 
+	Select Delete issue from dropdown menu  
+	Verify dialogue box should ask to confirm  
+	Select Delete issue button  
+	Verify the issue should be successfully deleted  
+
+# Negative Test  
+
+
+
+
+
+
+
+
+
+
