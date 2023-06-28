@@ -32,7 +32,7 @@
 
 - Writing the test scenarios was a nice payoff to all the memorization, but I still won't really know if I did it right. I have questions still about the syntax of writing the scenarios, but at the end, these questions won't be answered really, so did I learn right? I won't know until after the grade, and I won't see the correct way.
 
-- I feel like at some point, we have to get away from intro courses. It's ok to assume that in an IT program, that we should know something about code, that it's ok to let us start learning automations. After all, it wasn't even covered in this course, but this learning reflection includes. The course should include it too, at some point we have to take away the training wheels.
+- I feel like at some point, we have to get away from intro courses. It's ok to assume that in an IT program, that we should know something about code, that it's ok to let us start learning automations. After all, it wasn't even covered in this course, though the learning reflection includes it. The course should include it too, at some point we have to take away the training wheels.
 
 - I hope this course was good practice for my documention, and good practice thinking about the testing process and procedures, but I won't really know, or see what I could have done better.
 
