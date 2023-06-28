@@ -16,7 +16,7 @@
 - I had some problems with a conflict with the email address I used for Gitlab, and Github, then testing registration through Github, but that was it, and just took a bit of time and annoyance, one of those normal things to just work through.
 
 ## 6. Did you find any trouble using Github? have you used Github before? where?
-- I needed to do a rebase, but that was my fault, I didn't have any data loss or anything like that. I've been using Github for a while now. I've had an account for years, but my heaviest usage has been with Integrify.
+- I needed to do a rebase, but that was my fault, I didn't have any data loss or anything like that. I've been using Github for a while now. I've had an account for years, but my heaviest usage has been with Integrify, as well as personal projects.
 
 ## 7. If in the future if you need to automate these test cases, which framework or language will you use? and describe why (Robot Framework, Cypress, Selenium, or any other )
 - This question is better answered in the next part, as I don't have experience in automations, besides some devops experience in bash scripting, and the course specifically didn't cover automations. I have no preference to langauge or frameworks in general though. It's more just what the best tool for a given job is, and these tools are always changing. I suppose I would favor the one that my workplace favored.
