@@ -16,8 +16,7 @@ The error notifcation is unclear. The user lands on the login page and skips the
 The user should not see a login page where it appears to have been successful, with an error saying they have to 'resubmit.' The error is ambiguous.
      
 ## Relevant logs and/or screenshots
-![Error message](<Screenshot 2023-06-24 at 13.56.08.png>)
-
+![Registration Error](<../Image/Screenshot 2023-06-24 at 13.56.08.png>)
 
 ## Possible fixes
 Either adjust the routing to allow navigation back to the security verification page, to end on an error page stating that registration was not successful, or a less ambiguous error message, for example, "User registration failed, please try again." 

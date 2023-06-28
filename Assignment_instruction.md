@@ -35,7 +35,6 @@ The example application GitLab is a complete DevOps platform that enables profes
 
 URL: https://gitlab.com
 
-
 ## Home page
 
 - URL: https://gitlab.com/ 

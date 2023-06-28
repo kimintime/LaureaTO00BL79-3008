@@ -12,8 +12,6 @@ Tags	Issue, TS-4-Issue
 
 *** Variables ***
 
-# TODO: Write Issue creation field variables, Updated name of the issue
-
 //In real life, valid names go here, redacted for security purposes  
 
 IssuesUrl = https://gitlab.com/<username>/<ProjectName>/-/issues  
